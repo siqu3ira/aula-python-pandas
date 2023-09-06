@@ -14,7 +14,14 @@ df = pd.DataFrame(data=dados, index = ['a', 'b', 'c', 'd', 'e', 'f', 'g'])
 df.columns = ['Prova 1', 'Prova 2', 'Nomes', 'Turma']  # altera o nome das colunas (somente se for de todas as colunas)
 
 df = df.set_index(keys = 'Nomes') # identifica qual coluna substituirá o index
-df.head(n=3)
 
-print("Verificando os tipos de dados do dataFrame e da serie")                                                                               
-print("- DataFrame: ")
+print("Modos de mostrar o dataFrame")                                                                               
+print("- Completo: ")
+print(df)
+print()
+print("- Apenas os 3 primeiros: ")
+print(df.head(n=3))
+print()
+print("- Apenas os 3 últimos: ")
+print(df.tail(n=3))
+print()
