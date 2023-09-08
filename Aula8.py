@@ -14,9 +14,9 @@ df = df.set_index(keys = 'Nomes') # identifica qual coluna substituirá o index
 df.loc['Ana', 'Prova 1'] = 8 # Alterando a nota da Ana
 
 print("Verificação de quem pertence a turma A")
-filtro = (df['Turma'] == 'A') # Retorna true para quem pertence a turma A e false para quem pertence a turma B
-print(filtro)
-print()
+filtro = (df['Turma'] == 'A') # Verifica quem pertence a condição estabelecida
+print(filtro) # Retorna true para quem pertence a turma A e false para quem pertence a turma B
+print()  
 
 print("Retornando somente quem pertence a turma A")
-print(df[filtro])
+print(df[filtro]) # Retorna o dataFrame com as condições estabelecidas
