@@ -3,5 +3,6 @@ import numpy as np
 
 df = pd.read_csv('http://www.harve.com.br/praticas/dados_etl.csv', sep="\t")
 
-filtro = df[df['NumWebPurchases'] > 1] # Retornando apenas clientes que fizeram mais de uma compra na NumWebPurchases
-print(filtro['NumWebPurchases'].count()) # Contanado quantos aparecem
+df['Mais de Uma Compra'] = df['NumWebPurchases'] > 1 # Criando uma tabela aonde retorna True para o cliente que fez mais de uma compra e False para quem não fez
+
+print(len(df.loc[df['Mais de Uma Compra'] == True])) # Pegando a quantidade de cliente que realizaram mais de uma compra
