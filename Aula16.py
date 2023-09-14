@@ -30,5 +30,5 @@ df = pd.read_csv('meu_arquivo.csv')
 print(df.head())
 
 print("Lendo os dados de uma url")
-df = pd.read_csv('url', delimiter=';')
+df = pd.read_csv('url', delimiter=';') # delimiter serve para identenficar o separador
 print(df.head())
