@@ -25,6 +25,7 @@ classe = df['Income']
 print(classe)
 print()
 
-df['Classe'] = classe.apply (lambda x: recebimento(x))
-print(df['Classe'].value_counts())
+df['Classe'] = classe.apply (lambda x: recebimento(x)) # Cria uma coluna aonde os valores são retornos do método passado
+
+print(df['Classe'].value_counts()) # Calcula quantas vezes cada valor aparece na coluna
 
