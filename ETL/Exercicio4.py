@@ -10,8 +10,3 @@ def tratar_nomes(x):
 cols = list(df.columns)
 cols_tratadas = map(tratar_nomes, cols)
 df.columns = list(cols_tratadas)
-
-
-
-
-
